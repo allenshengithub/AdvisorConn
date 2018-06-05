@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 同小唯合作，线索少，混沌结局-->
+    <string-array name="text0612">
+        <item>我？</item>
+        <item>在副本人生游戏工作室哦</item>
+        <item>我是贾唯</item>
+        <item>游戏负责人</item>
+        <item>有好多要忙的</item>
+        <item>服务器宕机了还要补偿玩家的</item>
+        <item>不过官方都说了是愚人节活动了</item>
+    </string-array>
+</resources>

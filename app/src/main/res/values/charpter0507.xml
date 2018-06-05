@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 不同小唯合作，线索少，地狱结局-->
+    <string-array name="text0507">
+        <item>又一道岩浆从左边奔涌出来</item>
+        <item>岩浆四处迸发，大地开始震动</item>
+        <item>土地出现了更多裂口，脚下的泥土开始脱落</item>
+        <item>还好我跳开了</item>
+        <item>不敢停下脚步</item>
+        <item>四处闪躲着不知何时出现的陷阱</item>
+        <item>前方永远是令人绝望的一望无际的龟裂大地</item>
+        <item>地平线、地平线、地平线、无限延伸的地平线……</item>
+        <item>那里只有更多的绝望</item>
+    </string-array>
+</resources>

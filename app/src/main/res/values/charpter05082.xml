@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 不同小唯合作，线索少，死亡结局-->
+    <string-array name="text05082">
+        <item>嗨哟</item>
+        <item>跳上去了</item>
+    </string-array>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 不同小唯合作，线索少，死亡结局-->
+    <string-array name="text06092">
+        <item>他运气不太好</item>
+        <item>服务器宕机的时候，数据损坏了</item>
+        <item>现在要恢复人格不太可能了</item>
+    </string-array>
+</resources>

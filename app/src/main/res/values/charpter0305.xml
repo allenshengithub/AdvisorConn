@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="text0305">
+        <item>你说什么？</item>
+        <item>难道真的不是同一个软件？</item>
+        <item>但是名字一样啊，而且可以正常通讯</item>
+        <item>？？？</item>
+        <item>脑阔疼</item>
+        <item>算了</item>
+        <item>又到报告时间了</item>
+        <item>这地图很宽敞，我的心情也舒畅多了</item>
+        <item>眼前是一条回廊</item>
+        <item>金灿灿的像赌场一样</item>
+        <item>天花板由一个个方块组成</item>
+        <item>方块里嵌套着圆形和玫瑰花</item>
+        <item>两边的墙镶嵌着巨形的拱</item>
+        <item>每个拱又搭配着圆柱</item>
+        <item>圆柱的柱顶有树叶的纹样</item>
+        <item>柱子上悬挂着菱形壁灯</item>
+        <item>把整个回廊照得很亮</item>
+        <item>说起来</item>
+        <item>我经常幻想自己进了一家这样奢侈的公司</item>
+        <item>但是梦的最后都是一片漆黑</item>
+        <item>一无所有</item>
+        <item>突然间失去了一切</item>
+    </string-array>
+</resources>

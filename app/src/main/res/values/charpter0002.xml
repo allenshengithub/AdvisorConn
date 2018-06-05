@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources> <!-- 不同小唯合作，线索少，死亡结局-->
+    <string-array name="text0002">
+        <item>我不想被删除！</item><!-- 小唯对话-->
+        <item>我不想死！</item><!-- 小唯对话-->
+        <item>求你了！</item><!-- 小唯对话-->
+        <item>救救我！</item><!-- 小唯对话-->
+    </string-array>
+</resources>

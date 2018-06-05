@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="text0223">
+        <item>这是什么暗号？</item>
+        <item>你别乱猜害我啊？</item>
+        <item>算了，还是试试吧，也没其他办法</item>
+        <item>打开了！你简直是天才！</item>
+    </string-array>
+</resources>

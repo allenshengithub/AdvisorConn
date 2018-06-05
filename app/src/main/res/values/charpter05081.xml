@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 不同小唯合作，线索少，死亡结局-->
+    <string-array name="text05081">
+        <item>我正犹豫，天上掉下来一个火球</item>
+        <item>火球越来越多了</item>
+        <item>没得选择了</item>
+    </string-array>
+</resources>

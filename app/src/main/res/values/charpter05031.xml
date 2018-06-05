@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 不同小唯合作，线索少，死亡结局-->
+    <string-array name="text05031">
+        <item>你别吓我</item>
+        <item>什么下一个我</item>
+        <item>我还有好多个吗？</item>
+        <item>科幻小说看多了吧</item>
+        <item>不过我要是在游戏里的话</item>
+        <item>有几个相同的角色也不奇怪吧</item>
+        <item>她的意思难道是……要我去死？</item>
+        <item>背后一阵凉</item>
+    </string-array>
+</resources>

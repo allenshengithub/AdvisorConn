@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 同小唯合作，线索多，重生结局-->
+    <string-array name="text0801">
+        <item>我知道她要干什么</item>
+        <item>不过先暂时别刺激她</item>
+        <item>跟她进了门</item>
+        <item>眼前是一望无际的平原，深棕色的土壤</item>
+        <item>远处是一座座荒凉的山丘</item>
+        <item>山丘顶有一颗枯萎了的、主干劈成两半的树</item>
+        <item>遍地都是门</item>
+        <item>各式各样的门</item>
+        <item>有鸡蛋型的门在附近滚动</item>
+        <item>还有软绵绵、疲软地趴在门框上的门</item>
+        <item>感觉像是跳进了达利的画中世界</item>
+    </string-array>
+</resources>

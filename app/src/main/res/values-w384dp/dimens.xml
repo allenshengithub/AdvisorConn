@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?><resources>    <dimen name="titleText">20.833333333333332sp</dimen>
+    <dimen name="endingText">18.75sp</dimen>
+    <dimen name="ending_content">12.5sp</dimen>
+    <dimen name="margin">16.666666666666668dp</dimen>
+    <dimen name="navi">62.5dp</dimen>
+    <dimen name="widget_margin">10.416666666666666dp</dimen>
+    <dimen name="widget_margin3">15.625dp</dimen>
+    <dimen name="ending_top">20.833333333333332dp</dimen>
+    <dimen name="widget_margin2">5.208333333333333dp</dimen>
+    <dimen name="loading_margin">52.083333333333336dp</dimen>
+    <dimen name="dialog_title_height">48.958333333333336dp</dimen>
+    <dimen name="pop_margin">31.25dp</dimen>
+    <dimen name="select_width">187.5dp</dimen>
+    <dimen name="staff_width">229.16666666666666dp</dimen>
+    <dimen name="dialog_title_width">262.5dp</dimen>
+    <dimen name="dialog_width">270.8333333333333dp</dimen>
+    <dimen name="dialog_height">364.5833333333333dp</dimen>
+    <dimen name="config_dialog_height">447.9166666666667dp</dimen>
+    <dimen name="button_width">260.4166666666667dp</dimen>
+    <dimen name="config_width">187.5dp</dimen>
+    <dimen name="config_height">41.666666666666664dp</dimen>
+    <dimen name="config_height2">36.458333333333336dp</dimen>
+    <dimen name="margin_top">156.25dp</dimen>
+    <dimen name="margin_top2">83.33333333333333dp</dimen>
+    <dimen name="margin_top3">125.0dp</dimen>
+    <dimen name="tiny_margin">3.125dp</dimen>
+</resources>

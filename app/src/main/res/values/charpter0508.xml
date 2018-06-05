@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 不同小唯合作，线索少，地狱结局-->
+    <string-array name="text0508">
+        <item>我转头往另一个地平线飞奔</item>
+        <item>下一刻不知道自己脚底下会不会突然变成窟窿</item>
+        <item>也不知道岩浆什么时候就冒出来把自己淹没</item>
+        <item>绝望还在不停地袭来</item>
+        <item>天上开始坠落无数的火球</item>
+        <item>流星雨肆无忌惮地落下来</item>
+        <item>裤子烧着了，我在地上翻了个滚灭火</item>
+        <item>我到了岩浆河旁</item>
+        <item>一块大石头飘了过来</item>
+    </string-array>
+</resources>

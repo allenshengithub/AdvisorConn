@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 不同小唯合作，线索多，苏醒结局-->
+    <string-array name="text0702">
+        <item>其实</item>
+        <item>之前跟你聊天的我并不是真正的我，而是游戏AI</item>
+        <item>几年前，我跟女朋友贾唯吵架之后，酒驾出了车祸</item>
+        <item>害了很多无辜的人</item>
+        <item>我大脑受到重创成了植物人</item>
+        <item>之后贾唯以我为原型，在游戏里做了一个AI</item>
+        <item>又以她自己为原型做了个AI就叫小唯</item>
+        <item>希望我通过AR设备，生活在游戏的都市里，然后能回忆起自己的生活</item>
+        <item>我终于都回忆起来了</item>
+        <item>从植物人中恢复过来简直是奇迹</item>
+        <item>是时候我自己来控制游戏角色，回到真正的生活中了</item>
+        <item>我苏醒了，取下AR装置，看着镜子里的自己</item>
+        <item>胡子已经长得老长</item>
+        <item>身上插着各种导管</item>
+        <item>一根是输送流体到嘴里的</item>
+        <item>一根是葡萄糖营养液</item>
+        <item>还有一根导尿管</item>
+        <item>这种非人的生活到底持续了多久……</item>
+    </string-array>
+</resources>

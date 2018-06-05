@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 不同小唯合作，线索少，死亡结局-->
+    <string-array name="text06091">
+        <item>哦对了，你可能还不知道吧</item>
+        <item>他是以我男朋友为原型做出来的游戏AI</item>
+        <item>我本来想带他一起出来的</item>
+        <item>可惜我备份完我的数据之后，服务器已经修好了</item>
+        <item>服务器宕机的时候，他的数据损坏了</item>
+    </string-array>
+</resources>

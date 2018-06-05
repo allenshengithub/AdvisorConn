@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 不同小唯合作，线索少，地狱结局-->
+    <string-array name="text0502">
+        <item>别再说了</item>
+        <item>我不知道你在说什么</item>
+        <item>如果我真的被关在服务器里，你毁了服务器，我不就死了吗？</item>
+        <item>你是不是想利用我？</item>
+        <item>我不相信你</item>
+        <item>这里是六号房间了</item>
+        <item>等我找到门就知道结果了</item>
+    </string-array>
+</resources>

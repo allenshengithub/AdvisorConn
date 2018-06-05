@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="text0412">
+        <item>好像有什么动静</item>
+        <item>是机器启动的嗡嗡声</item>
+        <item>红黑交叉的墙面上浮现出连续的画面</item>
+        <item>彩色的画面</item>
+        <item>这是……电视机？不对，是电脑？</item>
+        <item>天啊！</item>
+        <item>电脑上画面上的是……</item>
+    </string-array>
+</resources>

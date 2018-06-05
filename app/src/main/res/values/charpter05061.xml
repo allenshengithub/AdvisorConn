@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 不同小唯合作，线索少，死亡结局-->
+    <string-array name="text05061">
+        <item>岩浆！</item>
+        <item>哇！！！</item>
+        <item>痛死了！</item>
+        <item>但是我在游戏里，不用担心会死</item>
+    </string-array>
+</resources>

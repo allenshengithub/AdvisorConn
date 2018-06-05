@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="text0125">
+        <item>别在意那么多细节</item>
+        <item>我太紧张了</item>
+        <item>需要放松一下</item>
+        <item>水晶上面的是一个凹进去的红色礼服人偶</item>
+        <item>钥匙上的人偶是凸出来的</item>
+        <item>应该是找到门锁了</item>
+        <item>但是这怎么看都不像是一道门啊</item>
+        <item>会不会爆炸啊？</item>
+        <item>手有些发抖</item>
+        <item>给我几秒钟，我要深呼吸一下</item>
+    </string-array>
+</resources>

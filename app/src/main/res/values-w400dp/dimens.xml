@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?><resources>    <dimen name="titleText">20.0sp</dimen>
+    <dimen name="endingText">18.0sp</dimen>
+    <dimen name="ending_content">12.0sp</dimen>
+    <dimen name="margin">16.0dp</dimen>
+    <dimen name="navi">60.0dp</dimen>
+    <dimen name="widget_margin">10.0dp</dimen>
+    <dimen name="widget_margin3">15.0dp</dimen>
+    <dimen name="ending_top">20.0dp</dimen>
+    <dimen name="widget_margin2">5.0dp</dimen>
+    <dimen name="loading_margin">50.0dp</dimen>
+    <dimen name="dialog_title_height">47.0dp</dimen>
+    <dimen name="pop_margin">30.0dp</dimen>
+    <dimen name="select_width">180.0dp</dimen>
+    <dimen name="staff_width">220.0dp</dimen>
+    <dimen name="dialog_title_width">252.0dp</dimen>
+    <dimen name="dialog_width">260.0dp</dimen>
+    <dimen name="dialog_height">350.0dp</dimen>
+    <dimen name="config_dialog_height">430.0dp</dimen>
+    <dimen name="button_width">250.0dp</dimen>
+    <dimen name="config_width">180.0dp</dimen>
+    <dimen name="config_height">40.0dp</dimen>
+    <dimen name="config_height2">35.0dp</dimen>
+    <dimen name="margin_top">150.0dp</dimen>
+    <dimen name="margin_top2">80.0dp</dimen>
+    <dimen name="margin_top3">120.0dp</dimen>
+    <dimen name="tiny_margin">3.0dp</dimen>
+</resources>

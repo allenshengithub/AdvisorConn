@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 不同小唯合作，线索多，苏醒结局-->
+    <string-array name="text0701">
+        <item>我想起来了一件很重要的事</item>
+        <item>现在我要假装跟她走</item>
+        <item>为后面的计划争取时间</item>
+    </string-array>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 同小唯合作，线索多，重生结局-->
+    <string-array name="text0810">
+        <item>嗯</item>
+        <item>真的是回来了</item>
+        <item>回到现实世界了</item>
+        <item>非常感谢你</item>
+        <item>帮我游戏过关</item>
+        <item>哦不对，帮我从植物人中苏醒过来</item>
+        <item>我能恢复原来的生活，你有大功劳</item>
+    </string-array>
+</resources>

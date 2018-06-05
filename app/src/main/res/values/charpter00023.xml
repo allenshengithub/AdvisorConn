@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources> <!-- 同小唯合作，线索少，混沌结局-->
+    <string-array name="text00023">
+        <item>我连接互联网的能力被限制了</item><!-- 小唯对话-->
+        <item>没有网络的话，病毒是不能发挥作用的</item><!-- 小唯对话-->
+        <item>而你可以连接到网络</item><!-- 小唯对话-->
+    </string-array>
+</resources>

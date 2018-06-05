@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 不同小唯合作，线索少，死亡结局-->
+    <string-array name="text05032">
+        <item>你的意思是这房间还会动？</item>
+        <item>转来转去的？</item>
+        <item>前后互换的？</item>
+        <item>这想象力我给满分</item>
+        <item>额</item>
+        <item>还真说不准</item>
+        <item>这地方会发生什么都不奇怪了</item>
+    </string-array>
+</resources>

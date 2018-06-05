@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="text04052">
+        <item>南面有门？</item>
+        <item>好的，我爬过去</item>
+        <item>你知道吗？</item>
+        <item>我大学学校就在这样一座山上</item>
+        <item>每天上课都要爬山</item>
+        <item>晚上老是梦见宿舍塌了</item>
+        <item>我就滚下了山</item>
+        <item>现在回忆起来还是个挺特别的经历</item>
+        <item>诶我好像走错方向了，这是南面吗？</item>
+        <item>等等</item>
+        <item>我看到了西面有扇很大的门</item>
+        <item>是个人都不会看漏</item>
+        <item>上面写着6/6</item>
+        <item>是不是最后一关了</item>
+    </string-array>
+</resources>

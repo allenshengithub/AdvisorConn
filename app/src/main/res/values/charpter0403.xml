@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="text0403">
+        <item>差点一脚踩空</item>
+        <item>房间外伸手不见五指，距离感奇差</item>
+        <item>房子摇摇欲坠地架在不知名的山顶上</item>
+        <item>虽然山顶平坦，不过房子的边沿都暴露在外</item>
+        <item>没有任何支撑，偏差一点就会坠入万丈深渊</item>
+        <item>一边是房间内木头稀里哗啦，一边是房间外断崖千尺，又被逼上了绝路</item>
+        <item>砰地一声，房子的屋顶被全部揭开了，四处迷雾的天空露了出来</item>
+        <item>屋子开始摇晃</item>
+    </string-array>
+</resources>

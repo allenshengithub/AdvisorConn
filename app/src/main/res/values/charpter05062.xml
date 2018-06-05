@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 不同小唯合作，线索少，死亡结局-->
+    <string-array name="text05062">
+        <item>哇</item>
+        <item>刚才有一道地火窜出来</item>
+        <item>就在我右边</item>
+        <item>我差点就成灰了</item>
+        <item>现在这地方只剩下一个有窟窿和一些空中飘的灰烬</item>
+        <item>人生只在一瞬间</item>
+    </string-array>
+</resources>

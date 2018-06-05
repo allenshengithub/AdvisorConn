@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="text02182">
+        <item>爬上墙？</item>
+        <item>这难度有点大</item>
+        <item>我试试</item>
+        <item>最前面圆头怪物跟过来了</item>
+        <item>它一下子就跳到墙上了</item>
+        <item>我滚了下去</item>
+        <item>掉进了臭水沟</item>
+    </string-array>
+</resources>

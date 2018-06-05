@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources> <!-- 不同小唯合作，线索少，死亡结局-->
+    <string-array name="text0001">
+        <item>我是小唯</item><!-- 小唯对话-->
+        <item>快想起来</item><!-- 小唯对话-->
+        <item>听我说，我们的意识被关在游戏里</item><!-- 小唯对话-->
+        <item>只有破坏了服务器，我们才能从游戏的世界回到现实中</item><!-- 小唯对话-->
+        <item>我已经在你的钥匙里放了病毒</item><!-- 小唯对话-->
+        <item>现在就差最后一步触发所有病毒了</item><!-- 小唯对话-->
+        <item>毁掉服务器，我们就可以逃出去</item><!-- 小唯对话-->
+    </string-array>
+</resources>

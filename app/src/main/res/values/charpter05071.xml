@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 不同小唯合作，线索少，死亡结局-->
+    <string-array name="text05071">
+        <item>前面是岩浆瀑布！</item>
+        <item>我现在挂在悬崖上</item>
+        <item>一只手死死抓着石头</item>
+        <item>爬上来了</item>
+    </string-array>
+</resources>

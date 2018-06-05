@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="text0302">
+        <item>有提示吗？</item>
+        <item>我们用的是同一个软件吧？</item>
+        <item>看看app简介</item>
+        <item>云顾问是一款咨询服务类软件</item>
+        <item>我们了解你最需要的</item>
+        <item>随时随地有专业人士提供帮助</item>
+        <item>balabala</item>
+    </string-array>
+</resources>

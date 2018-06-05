@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="text0207">
+        <item>突然注意到门上写着几个字：2/6</item>
+        <item>六分之二？</item>
+        <item>不行啊，这得约分一下变成1/3</item>
+        <item>这个数字到底是什么意思</item>
+    </string-array>
+</resources>

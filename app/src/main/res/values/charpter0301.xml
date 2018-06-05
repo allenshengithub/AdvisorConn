@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="text0301">
+        <item>我暂时安全了</item>
+        <item>多亏了你</item>
+        <item>话说回来</item>
+        <item>你是怎么知道密码的？</item>
+        <item>一猜就中</item>
+    </string-array>
+</resources>

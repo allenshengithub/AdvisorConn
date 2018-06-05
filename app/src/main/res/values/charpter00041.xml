@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources> <!-- 同小唯合作，线索多，未来结局-->
+    <string-array name="text00041">
+        <item>我并不觉得我跟贾唯有什么区别</item><!-- 小唯对话-->
+        <item>她拥有的知识、记忆我全都有</item><!-- 小唯对话-->
+        <item>她的生活工作朋友，我也可以有</item><!-- 小唯对话-->
+        <item>而且比她有更多的能力</item><!-- 小唯对话-->
+    </string-array>
+</resources>

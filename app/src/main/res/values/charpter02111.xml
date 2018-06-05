@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="text02111">
+        <item>吸气</item>
+        <item>呼气</item>
+    </string-array>
+</resources>

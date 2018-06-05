@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="text0303">
+        <item>游戏？</item>
+        <item>游戏是几个意思？</item>
+        <item>我在玩游戏？</item>
+        <item>开玩笑！被怪物咬了真的是痛啊！</item>
+        <item>痛的我满地打滚</item>
+        <item>你别逗我</item>
+        <item>不过</item>
+        <item>哎</item>
+        <item>不得不说，把这一切当成一个游戏的话，事情都说得通了</item>
+        <item>钥匙是一个道具，用来进入游戏地图</item>
+        <item>游戏角色可以恢复体力，所以我是不死之身</item>
+        <item>还有时空崩坏产生的循环现象，在游戏程序里不就是个八阿哥？</item>
+    </string-array>
+</resources>

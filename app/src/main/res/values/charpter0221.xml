@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="text0221">
+        <item>找到门了！</item>
+        <item>是3/6，比刚才多了一点，是不是找到6/6就能看到终点？</item>
+        <item>附近没有水，被包围就完蛋了！</item>
+        <item>赶紧打开门</item>
+        <item>竟然还有个密码！</item>
+        <item>让我试试密码</item>
+        <item>嗯？好像哪里不对，我TM哪知道什么密码！</item>
+        <item>试试我生日1102</item>
+        <item>我靠！猜错了还有警报！</item>
+        <item>完了完了我感觉远处的怪物已经开始涌过来了</item>
+        <item>急死人了，让我再试试其他</item>
+    </string-array>
+</resources>

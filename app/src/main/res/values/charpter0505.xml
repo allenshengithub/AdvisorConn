@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 不同小唯合作，线索少，地狱结局-->
+    <string-array name="text0505">
+        <item>眼前是一块龟裂的大地</item>
+        <item>空空如也一无所有</item>
+        <item>好荒凉</item>
+        <item>天上却有个不和谐的东西</item>
+        <item>是极光</item>
+        <item>就像一张大屏幕一样</item>
+        <item>时有时无的，有时是冷冷的蓝色，有时是火热的红色</item>
+    </string-array>
+</resources>

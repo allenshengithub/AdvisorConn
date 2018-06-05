@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 不同小唯合作，线索少，地狱结局-->
+    <string-array name="text0503">
+        <item>小唯没有再多说</item>
+        <item>她看了我一眼，丢下一句：要等下一个了，再见</item>
+        <item>消失了</item>
+        <item>下一个？</item>
+        <item>下一个是什么意思？</item>
+    </string-array>
+</resources>

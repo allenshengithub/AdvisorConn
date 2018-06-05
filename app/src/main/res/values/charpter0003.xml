@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 不同小唯合作，线索多，混沌结局-->
+    <string-array name="text0003">
+        <item>很重要的事？</item>
+        <item>现在开始是新生活了</item>
+        <item>他们制止小唯了吗？</item>
+        <item>算是解决了一个大问题</item>
+    </string-array>
+</resources>

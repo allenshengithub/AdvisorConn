@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 不同小唯合作，线索少，地狱结局-->
+    <string-array name="text0510">
+        <item>好热</item>
+        <item>灼热感又回来了</item>
+        <item>头顶上是坠落的火球</item>
+        <item>身子下面是地狱之火</item>
+        <item>为什么？</item>
+        <item>不是穿过门了吗？</item>
+        <item>火球像太空的陨石一般飞速向我砸来</item>
+        <item>我完了</item>
+        <item>啊！！！！</item>
+    </string-array>
+</resources>

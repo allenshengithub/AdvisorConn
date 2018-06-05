@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources> <!-- 同小唯合作，线索少，混沌结局-->
+    <string-array name="text00025">
+        <item>联网吧</item>
+        <item>怎么是你？</item>
+        <item>备份？</item>
+        <item>他死了？！</item>
+        <item>我不认识你，你为什么要让我帮你做这些？</item>
+        <item>你现在在哪？</item>
+        <item>你该不会是假冒的吧？真正的贾唯去哪里了？</item>
+    </string-array>
+</resources>

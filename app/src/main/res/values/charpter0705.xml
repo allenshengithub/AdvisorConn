@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 不同小唯合作，线索多，苏醒结局-->
+    <string-array name="text0705">
+        <item>总觉得有点悲伤</item>
+        <item>游戏的世界频道里在广播小唯的事</item>
+        <item>说要进行游戏维护，删除所有跟她有关的模块</item>
+        <item>他们做了一个新的小唯了</item>
+        <item>不过已经不是我认识的那个了</item>
+        <item>今天晚上要闭服四小时了</item>
+        <item>我想这是我们最后一次聊天了吧</item>
+        <item>云顾问马上就要被删除了</item>
+        <item>也许我们需要交换一个新的联系方shi</item>
+    </string-array>
+</resources>

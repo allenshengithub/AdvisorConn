@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="text01072">
+        <item>说起来，以前也遇到过这样的交通事故，我似乎是撞了人，之后进了医院，然后……</item>
+        <item>奇怪，想不起来了</item>
+        <item>不说这了</item>
+        <item>当时我很害怕，心想要自首就趁早，交警一直在现场，说不定还能减轻处罚</item>
+        <item>心里反复揣摩着措辞，一路向交警走去</item>
+        <item>我向他承认闯了黄灯，而且还傻站在马路中间，间接造成事故</item>
+    </string-array>
+</resources>

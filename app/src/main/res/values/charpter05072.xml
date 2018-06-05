@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 不同小唯合作，线索少，死亡结局-->
+    <string-array name="text05072">
+        <item>远处有红光，接着是山头，然后是炙热的空气</item>
+        <item>前面是正在爆发的火山，岩浆从四面八方席卷而来</item>
+        <item>有些岩浆顺着大地裂口</item>
+        <item>飞流直下成为了壮观的瀑布</item>
+    </string-array>
+</resources>

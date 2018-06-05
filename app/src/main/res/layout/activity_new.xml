@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="alphabet.adviserconn.NewCharpter.NewActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:padding="@dimen/widget_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/account_filling"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:id="@+id/set"
+            android:padding="@dimen/widget_margin"
+            android:src="@mipmap/set_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true" />
+
+        <ImageView
+            android:id="@+id/edit"
+            android:layout_toLeftOf="@id/set"
+            android:padding="@dimen/widget_margin"
+            android:src="@mipmap/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" />
+
+
+        <TextView
+            android:layout_toRightOf="@id/avatar"
+            android:layout_toLeftOf="@id/edit"
+            android:text="marco@AdvisorConn.cn"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8" />
+
+    <RadioGroup
+        android:id="@+id/rg_tab"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/receive"
+            style="@style/navi_tab"
+            android:text="收件箱" />
+
+        <RadioButton
+            android:id="@+id/send"
+            style="@style/navi_tab"
+            android:text="发件箱" />
+
+        <RadioButton
+            android:id="@+id/contacts"
+            style="@style/navi_tab"
+            android:text="通讯录" />
+
+        <RadioButton
+            android:id="@+id/me"
+            style="@style/navi_tab"
+            android:text="我" />
+
+
+    </RadioGroup>
+
+
+</LinearLayout>

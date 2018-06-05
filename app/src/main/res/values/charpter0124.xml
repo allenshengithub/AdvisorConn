@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="text0124">
+        <item>你说得对</item>
+        <item>不前进的话，就找不到答案了</item>
+        <item>沿着水晶的周围摸索</item>
+        <item>水晶背面有一个类似人偶的阴影</item>
+        <item>你猜是什么</item>
+        <item>猜对了，又是一个人偶图案</item>
+    </string-array>
+</resources>

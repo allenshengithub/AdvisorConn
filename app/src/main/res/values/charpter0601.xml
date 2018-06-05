@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 同小唯合作，线索少，混沌结局-->
+    <string-array name="text0601">
+        <item>我跟着她进了一扇门</item>
+        <item>一望无际的平原</item>
+        <item>深棕色的土壤</item>
+        <item>远处是一座座荒凉的山丘</item>
+        <item>夕阳下，一切都被染红了</item>
+        <item>山丘顶有一颗枯萎了的、主干劈成两半的树</item>
+        <item>遍地都是门</item>
+        <item>各式各样的门</item>
+        <item>仿佛是世界各地搜集而来的</item>
+        <item>有的是野兽图案装饰而成的</item>
+        <item>有的是三角形的</item>
+        <item>有鸡蛋型在附近滚动的</item>
+        <item>还有软绵绵、疲软地趴在门框上的</item>
+        <item>感觉像是跳进了达利的画中世界</item>
+        <item>我辛辛苦苦找了大半辈子的门</item>
+        <item>这里竟然遍地都是？</item>
+        <item>被门围绕着的是一台巨大的机器</item>
+        <item>深蓝色的，每个面都有一条发光的线</item>
+        <item>它发出低沉的轰鸣声</item>
+        <item>不知疲倦地工作着</item>
+    </string-array>
+</resources>

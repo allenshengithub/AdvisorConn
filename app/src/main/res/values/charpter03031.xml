@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="text03031">
+        <item>不是那个啦</item>
+        <item>八阿哥的英文是bug</item>
+        <item>就是程序里的一些错误</item>
+        <item>游戏中发生时间循环可能是一种bug</item>
+    </string-array>
+</resources>

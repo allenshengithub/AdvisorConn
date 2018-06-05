@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="text00001">
+        <item>现在没有时间多说了</item><!-- 小唯对话-->
+        <item>管理员马上就会发现我们</item><!-- 小唯对话-->
+        <item>我们得赶快离开</item><!-- 小唯对话-->
+        <item>快跟上我！</item><!-- 小唯对话-->
+    </string-array>
+</resources>

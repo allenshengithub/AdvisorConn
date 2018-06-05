@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 同小唯合作，线索少，混沌结局-->
+    <string-array name="text0611">
+        <item>我也不认识你啊</item>
+        <item>我只是在APP里放了个服务器的后门</item>
+        <item>是你自己下载的APP</item>
+        <item>也许你奇怪为什么你们两个的云顾问不一样？</item>
+        <item>我又不是傻子，当然不会在一个游戏AI的程序里放后门了，太容易被发现了</item>
+        <item>现在一切都结束了</item>
+        <item>你帮了我是事实</item>
+        <item>我也感谢过你了</item>
+    </string-array>
+</resources>

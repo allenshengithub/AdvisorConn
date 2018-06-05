@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 不同小唯合作，线索多，苏醒结局-->
+    <string-array name="text0704">
+        <item>他们发现小唯私自制造了很多病毒</item>
+        <item>利用假想空间副本的很多漏洞</item>
+        <item>通过“钥匙”把病毒放了进去</item>
+        <item>准备以此攻击服务器，毁掉整个游戏</item>
+        <item>这个云顾问APP也是她写的</item>
+        <item>为了让其他人可以盗取服务器资料</item>
+        <item>用这个APP，小唯就能指挥其他AI到处放病毒</item>
+        <item>所以，你获得的提示就是从服务器盗取的信息</item>
+        <item>贾唯已经让管理员删了小唯AI</item>
+    </string-array>
+</resources>

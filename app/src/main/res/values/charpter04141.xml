@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="text04141">
+        <item>电视机上出现了新的画面</item>
+        <item>游戏“副本人生”上线了</item>
+        <item>这游戏赚了很多钱</item>
+        <item>庆功会上发言的是我的女朋友，真名叫贾唯</item>
+        <item>她穿着V字领长裙</item>
+        <item>游戏的运营情况很顺利</item>
+        <item>贾唯做了个彩蛋——一个以自己为原型创作出来的AI，名叫小唯</item>
+        <item>AI学东西很快，自己开始帮助玩家过关，甚至开始改地图了</item>
+        <item>由于小唯破坏了游戏规则</item>
+        <item>管理员封了小唯的权限</item>
+    </string-array>
+</resources>

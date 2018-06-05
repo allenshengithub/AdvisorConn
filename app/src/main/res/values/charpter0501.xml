@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 不同小唯合作，线索少，地狱结局-->
+    <string-array name="text0501">
+        <item>你是不是对我的记忆做了什么奇怪的事，让我以为你是我女朋友</item>
+        <item>我在前二十年里，从来都不知道你</item>
+        <item>你到底是谁</item>
+    </string-array>
+</resources>

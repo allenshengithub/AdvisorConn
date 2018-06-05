@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="text0306">
+        <item>前后都是一样的回廊</item>
+        <item>望不到尽头</item>
+        <item>往一个方向一直走着</item>
+        <item>却不知道哪里才是个终点</item>
+        <item>是不是遇到鬼打墙了</item>
+        <item>鬼打墙算什么哦</item>
+        <item>我都见过大世面了</item>
+        <item>诶不对</item>
+        <item>哪里不对劲</item>
+        <item>墙上的花纹一点点变模糊了</item>
+        <item>走廊好像没有那么亮了</item>
+        <item>壁灯坏了好多个</item>
+        <item>之前那种奢侈的感觉一点点消退了</item>
+        <item>身后有一股寒意</item>
+        <item>越往前走</item>
+        <item>周围越发变得简陋</item>
+        <item>不知不觉，刚才的赌场没了</item>
+        <item>变成了矿道</item>
+        <item>墙壁上是凹凸不平的原始矿石</item>
+        <item>柱子上的壁灯变成了火把架子</item>
+    </string-array>
+</resources>

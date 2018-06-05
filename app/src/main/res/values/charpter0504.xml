@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 不同小唯合作，线索少，地狱结局-->
+    <string-array name="text0504">
+        <item>不说了，快点打开门</item>
+        <item>我想知道闯了六关之后到底有什么</item>
+        <item>我听到叮地一声</item>
+        <item>你猜发生了什么</item>
+        <item>一道电梯门出现在我眼前</item>
+        <item>我看到的门牌号是……8/6？</item>
+        <item>8是什么意思，这不就超过了吗？</item>
+        <item>仔细想想的话</item>
+        <item>8横过来的话也可以当成一个无限来看，难道是这个意思？</item>
+        <item>不管了，我就想快点离开这里</item>
+    </string-array>
+</resources>

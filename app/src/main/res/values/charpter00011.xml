@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources> <!-- 不同小唯合作，线索少，死亡结局-->
+    <string-array name="text00011">
+        <item>下一个你？</item>
+        <item>下一个房间？</item>
+        <item>你那边怎么样了</item>
+        <item>APP的提示写着死</item>
+        <item>小心左边！</item>
+        <item>小心右边！</item>
+        <item>往前跑！</item>
+        <item>往后跑！</item>
+        <item>继续找出口</item>
+        <item>跳上石头</item>
+    </string-array>
+</resources>

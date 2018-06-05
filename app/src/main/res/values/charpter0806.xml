@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 同小唯合作，线索多，重生结局-->
+    <string-array name="text0806">
+        <item>哦，对了我要跟你解释一下</item>
+        <item>所有的事我都回忆起来了</item>
+        <item>几年前，我因为车祸变成了植物人</item>
+        <item>我女朋友贾唯用了各种方法帮助我恢复</item>
+        <item>甚至做了一个以我为原型的游戏AI</item>
+        <item>让我一直看着AI在游戏里生活，想以此唤醒我</item>
+        <item>现在我终于从植物人的状态中恢复过来了</item>
+        <item>我让贾唯协助我做了一个小唯专用的机器人</item>
+        <item>现在在等小唯的回应呢</item>
+        <item>要是她继续搞破坏的话</item>
+        <item>只能删掉这个AI，做个新的了</item>
+        <item>我们都不想这样</item>
+        <item>我先去忙了</item>
+    </string-array>
+</resources>

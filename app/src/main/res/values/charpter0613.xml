@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 同小唯合作，线索少，混沌结局-->
+    <string-array name="text0613">
+        <item>哦……</item>
+        <item>其实我快到你那里了</item>
+        <item>等会有个快递哦</item>
+        <item>里面有一个礼物</item>
+        <item>是以你为原型打印出来的AI</item>
+        <item>他比你更优秀，更像你</item>
+        <item>完全可以取代你</item>
+        <item>我好像听到门铃声了哦</item>
+    </string-array>
+</resources>

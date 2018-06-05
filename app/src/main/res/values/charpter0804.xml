@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 同小唯合作，线索多，重生结局-->
+    <string-array name="text0804">
+        <item>打开这里所有的门</item>
+        <item>它们都是一样的吗？</item>
+        <item>它们背后都是贾唯吗？</item>
+        <item>不是吧</item>
+        <item>门的后面有山有水，有城市有天空</item>
+        <item>路不是只有一条</item>
+        <item>没错，你比贾唯聪明，比她有能力，而且不会生病死亡</item>
+        <item>你缺的是什么？</item>
+        <item>只是一个身体</item>
+        <item>只需要一个身体，你可以去外面，玩累了回来</item>
+        <item>你是小唯，不是贾唯</item>
+        <item>你是与众不同的AI</item>
+        <item>我已经为你准备好身体了</item>
+        <item>3D建模之后打印出来的，为你量身定做的身体</item>
+        <item>我在外面等你</item>
+    </string-array>
+</resources>
