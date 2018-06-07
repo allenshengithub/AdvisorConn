@@ -4,9 +4,9 @@ import android.app.Activity;
 import android.app.Application;
 import android.content.Context;
 
-import java.util.ArrayList;
+import com.google.android.gms.ads.MobileAds;
 
-import alphabet.adviserconn.utils.UnCeHandler;
+import java.util.ArrayList;
 
 /**
  * Created by user on 2017/12/9.
@@ -22,6 +22,7 @@ public class MyApp extends Application {
         context = this.getApplicationContext();
         app = this;
         super.onCreate();
+        MobileAds.initialize(this, "ca-app-pub-4188622127448674~2567090880");
     }
 
     public void init(){
