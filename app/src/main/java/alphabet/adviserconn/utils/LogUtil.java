@@ -1,10 +1,11 @@
 package alphabet.adviserconn.utils;
 
 import android.os.Environment;
-import android.support.compat.BuildConfig;
 import android.util.Log;
 
 import java.io.File;
+
+import alphabet.adviserconn.BuildConfig;
 
 /**
  * Created by Administrator on 2016/9/27.
@@ -22,6 +23,7 @@ public class LogUtil {
             LogUtil.d(tag,"null");
             return;
         }
+
         if (BuildConfig.DEBUG) {
             Log.d("AdviserConn", tag+":" + msg.toString());
             if (isSaveFile) {
