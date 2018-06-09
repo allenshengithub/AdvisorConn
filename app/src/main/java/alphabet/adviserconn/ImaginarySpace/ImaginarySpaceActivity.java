@@ -45,6 +45,14 @@ public class ImaginarySpaceActivity extends BaseActivity implements View.OnClick
 
     ChatAdapter chatAdapter;
 
+    boolean  clue1 = false;
+    boolean  clue2 = false;
+    boolean  clue3 = false;
+    boolean  clue4 = false;
+    boolean  clue5 = false;
+    boolean  clue6 = false;
+
+
     Context context;
     Gson gson;
     AssetManager assetManager = null;
@@ -348,7 +356,7 @@ public class ImaginarySpaceActivity extends BaseActivity implements View.OnClick
 //                                        loadManually = false;
 //                                    } else
 //                                        mainTxtCount = systemParams.getInt("skipMainFlag");
-                                    mainTxtCount = mainTxtCount + 2;
+                                    mainTxtCount = mainTxtCount + 1;
                                     currentList = mainList;
                                     saveChapter = optionContent;
                                     systemParams.setString("saveChapter", optionContent);
@@ -358,9 +366,6 @@ public class ImaginarySpaceActivity extends BaseActivity implements View.OnClick
                                     String next_chapter = currentBean.getNext_chapter();
                                     if ("alternative".equals(next_chapter)) {
                                         int clueCount = 0;
-                                        boolean clue1 = systemParams.getBoolean("clue1");
-                                        boolean clue2 = systemParams.getBoolean("clue2");
-                                        boolean clue3 = systemParams.getBoolean("clue3");
                                         if (clue1 == true)
                                             clueCount++;
                                         if (clue2 == true)
@@ -368,7 +373,7 @@ public class ImaginarySpaceActivity extends BaseActivity implements View.OnClick
                                         if (clue3 == true)
                                             clueCount++;
 
-                                        if (!systemParams.getBoolean("clue6", false)) {
+                                        if (!clue6) {
                                             if (clueCount == 3)
                                                 inputStream = getResources().openRawResource(R.raw.ending_wakeup);
                                             else
@@ -410,28 +415,33 @@ public class ImaginarySpaceActivity extends BaseActivity implements View.OnClick
                                     branchTxtCount++;
                                     switch (currentBean.getClue_tag()) {
                                         case "1":
-                                            systemParams.setBoolean("clue1", true);
+                                            clue1 = true;
+                                            systemParams.setBoolean("clue1", clue1);
                                             break;
                                         case "2":
-                                            systemParams.setBoolean("clue2", true);
+                                            clue2 = true;
+                                            systemParams.setBoolean("clue2", clue2);
                                             break;
                                         case "3":
-                                            systemParams.setBoolean("clue3", true);
+                                            clue3 = true;
+                                            systemParams.setBoolean("clue3", clue3);
                                             break;
                                         case "4":
+                                            clue4 = true;
                                             systemParams.setBoolean("clue4", true);
                                             break;
                                         case "5":
+                                            clue5 = true;
                                             systemParams.setBoolean("clue5", true);
                                             break;
                                         case "6":
+                                            clue6 = true;
                                             systemParams.setBoolean("clue6", true);
                                             break;
-
                                     }
                                     break;
                                 case "secret":
-                                    if (systemParams.getBoolean("clue4", false) == true) {
+                                    if (clue4 == true) {
                                         inputStream = getResources().openRawResource(R.raw.branch_secret1);
                                         isBranch = true;
                                         count = 0;
@@ -441,7 +451,7 @@ public class ImaginarySpaceActivity extends BaseActivity implements View.OnClick
                                         }.getType());
                                         currentList.clear();
                                         currentList = branchList;
-                                    } else if (systemParams.getBoolean("clue5", false) == true) {
+                                    } else if (clue5 == true) {
                                         inputStream = getResources().openRawResource(R.raw.branch_secret2);
                                         isBranch = true;
                                         count = 0;
@@ -603,8 +613,10 @@ public class ImaginarySpaceActivity extends BaseActivity implements View.OnClick
                 isSelectMode = false;
                 currentBean.setContent(selectOne.getText().toString());
                 //选择不相信小唯
-                if (Contants.SPECIAL_SELECT_ONE.equals(selectOne.getText().toString()))
-                    systemParams.setBoolean("clue6", false);
+                if (Contants.SPECIAL_SELECT_ONE.equals(selectOne.getText().toString())) {
+                    clue6 = false;
+                    systemParams.setBoolean("clue6", clue6);
+                }
                 currentList.get(count).setType("right_text");
                 addItem();
                 //设置选择的为1
@@ -623,10 +635,10 @@ public class ImaginarySpaceActivity extends BaseActivity implements View.OnClick
                 isSelectMode = false;
                 currentBean.setContent(selectTwo.getText().toString());
                 //选择相信小唯
-                if (Contants.SPECIAL_SELECT_TWO.equals(selectTwo.getText().toString()))
-                    systemParams.setBoolean("clue6", true);
-                else
-                    systemParams.setBoolean("clue6", false);
+                if (Contants.SPECIAL_SELECT_TWO.equals(selectTwo.getText().toString())) {
+                    clue6 = true;
+                    systemParams.setBoolean("clue6", clue6);
+                }
                 currentList.get(count).setType("right_text");
                 addItem();
                 //设置选择的为2
@@ -688,6 +700,13 @@ public class ImaginarySpaceActivity extends BaseActivity implements View.OnClick
                             systemParams.setBoolean("playerSaveIsBranch", isBranch);
                             systemParams.setDataList("playerSaveList", saveList);
                             systemParams.setString("playerSaveChapter", saveChapter);
+
+                            systemParams.setBoolean("playerSaveClue1", systemParams.getBoolean("clue1",false));
+                            systemParams.setBoolean("playerSaveClue2", systemParams.getBoolean("clue2",false));
+                            systemParams.setBoolean("playerSaveClue3", systemParams.getBoolean("clue3",false));
+                            systemParams.setBoolean("playerSaveClue4", systemParams.getBoolean("clue4",false));
+                            systemParams.setBoolean("playerSaveClue5", systemParams.getBoolean("clue5",false));
+                            systemParams.setBoolean("playerSaveClue6", systemParams.getBoolean("clue6",false));
                             showToast("存档成功！");
                         }
 
@@ -710,13 +729,21 @@ public class ImaginarySpaceActivity extends BaseActivity implements View.OnClick
                                 timerTask.cancel();
                             loadManually = true;
                             startDialog.show();
-                            int playerSaveCount = systemParams.getInt("playerSaveCount", -1);
-                            int playerSavePosition = systemParams.getInt("playerSavePosition", -1);
+
+                            int playerSaveCount = systemParams.getInt("playerSaveCount", 0);
+                            int playerSavePosition = systemParams.getInt("playerSavePosition", 0);
                             boolean playerSaveIsBranch = systemParams.getBoolean("playerSaveIsBranch", false);
                             ArrayList<ChatBean> playerSaveList = systemParams.getDataList("playerSaveList");
                             String playerSaveChapter = systemParams.getString("playerSaveChapter", "");
-                            int playerSaveMainCount = systemParams.getInt("playerSaveMainCount", -1);
-                            int playerSaveBranchCount = systemParams.getInt("playerSaveBranchCount", -1);
+                            int playerSaveMainCount = systemParams.getInt("playerSaveMainCount", 0);
+                            int playerSaveBranchCount = systemParams.getInt("playerSaveBranchCount", 0);
+
+                            clue1= systemParams.getBoolean("playerSaveClue1",false);
+                            clue2= systemParams.getBoolean("playerSaveClue2",false);
+                            clue3= systemParams.getBoolean("playerSaveClue3",false);
+                            clue4= systemParams.getBoolean("playerSaveClue4",false);
+                            clue5= systemParams.getBoolean("playerSaveClue5",false);
+                            clue6= systemParams.getBoolean("playerSaveClue6",false);
 
                             if (playerSaveList == null || playerSaveChapter == null || playerSaveList.size() == 0 || playerSaveMainCount == -1 || playerSaveBranchCount == -1 || playerSaveCount == -1 || playerSavePosition == -1 || TextUtils.isEmpty(playerSaveChapter)) {
                                 showToast("没有读取到存档");
@@ -814,7 +841,10 @@ public class ImaginarySpaceActivity extends BaseActivity implements View.OnClick
             @Override
             public void buttonOne() {
 
+                startDialog.show();
                 deleteProgress();
+                saveDisabled = false;
+
                 branchList.clear();
                 mainList.clear();
                 currentList.clear();
@@ -827,7 +857,12 @@ public class ImaginarySpaceActivity extends BaseActivity implements View.OnClick
                 infoLl.setVisibility(View.INVISIBLE);
                 position = 0;
 
-                initView();
+                loadFirst();
+                updateTimer();
+                selectOne.setVisibility(View.GONE);
+                selectTwo.setVisibility(View.GONE);
+                sendTv.setVisibility(View.GONE);
+                recyclerview.scrollToPosition(position);
 
             }
 
@@ -849,6 +884,20 @@ public class ImaginarySpaceActivity extends BaseActivity implements View.OnClick
             systemParams.setInt("saveCount", count);
             systemParams.setInt("savePosition", position);
             systemParams.setBoolean("isBranch", isBranch);
+
+            clue1 = false;
+            clue2 = false;
+            clue3 = false;
+            clue4 = false;
+            clue5 = false;
+            clue6 = false;
+            systemParams.setBoolean("clue1", clue1);
+            systemParams.setBoolean("clue2", clue2);
+            systemParams.setBoolean("clue3", clue3);
+            systemParams.setBoolean("clue4", clue4);
+            systemParams.setBoolean("clue5", clue5);
+            systemParams.setBoolean("clue6", clue6);
+
             Log.e(TAG, "saveProgress: " + saveList.size() + " ----saveChapter: " + saveChapter + " ---saveCount: " + count + " ---savePosition:" + position + "---saveMainCount:" + mainTxtCount + "---saveBranchCount:" + branchTxtCount);
         }
     }
@@ -900,6 +949,44 @@ public class ImaginarySpaceActivity extends BaseActivity implements View.OnClick
         timer = new Timer();
         generateTimer();
         timer.schedule(timerTask, delayTime, delayTime);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        updateTimer();
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        updateTimer();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        if (timer != null) {
+            timer.cancel();
+            timer = null;
+        }
+        if (timerTask != null) {
+            timerTask.cancel();
+            timerTask = null;
+        }
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        if (timer != null) {
+            timer.cancel();
+            timer = null;
+        }
+        if (timerTask != null) {
+            timerTask.cancel();
+            timerTask = null;
+        }
     }
 
 
