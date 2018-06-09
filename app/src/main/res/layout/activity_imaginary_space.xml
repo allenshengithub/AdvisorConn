@@ -180,5 +180,4 @@
             android:textColor="@color/textColorPrimary" />
 
     </LinearLayout>
-
 </RelativeLayout>

@@ -20,7 +20,7 @@ public abstract class MyAlertDialog extends Dialog implements View.OnClickListen
     String button2;
 
 
-    public MyAlertDialog(Context context, String title, String button1, String button2) {
+    protected MyAlertDialog(Context context, String title, String button1, String button2) {
         super(context, R.style.DialogTheme);
         this.context = context;
         this.title = title;
@@ -31,8 +31,8 @@ public abstract class MyAlertDialog extends Dialog implements View.OnClickListen
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.dialog_end);
-        titleTv = (TextView)findViewById(R.id.title);
+        setContentView(getLayoutId());
+        titleTv = (TextView) findViewById(R.id.title);
         buttonOneTv = (TextView) findViewById(R.id.buttonOne);
         buttonOneTv.setOnClickListener(this);
         buttonTwoTv = (TextView) findViewById(R.id.buttonTwo);
@@ -44,11 +44,13 @@ public abstract class MyAlertDialog extends Dialog implements View.OnClickListen
         buttonTwoTv.setText(button2);
     }
 
-
+    protected int getLayoutId() {
+        return R.layout.dialog_end;
+    }
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
+        switch (v.getId()) {
             case R.id.buttonOne:
                 buttonOne();
                 dismiss();
@@ -59,7 +61,9 @@ public abstract class MyAlertDialog extends Dialog implements View.OnClickListen
                 break;
         }
     }
+
     public abstract void buttonOne();
+
     public abstract void buttonTwo();
 }
 

@@ -32,6 +32,7 @@ import alphabet.adviserconn.utils.AnimeUtil;
 import alphabet.adviserconn.utils.Contants;
 import alphabet.adviserconn.utils.ConvertString;
 import alphabet.adviserconn.utils.FileUtils;
+import alphabet.adviserconn.widget.AdBannerDialog;
 import alphabet.adviserconn.widget.ConfigDialog;
 import alphabet.adviserconn.widget.EndingsDialog;
 import alphabet.adviserconn.widget.MyAlertDialog;
@@ -690,7 +691,7 @@ public class ImaginarySpaceActivity extends BaseActivity implements View.OnClick
             case R.id.save_iv:
                 if ((!saveDisabled) && (isSelectMode)&&(!isBranch)) {
 //                    Log.e(TAG, "onClick: "+saveDisabled+" "+isSelectMode+" "+ isBranch);
-                    saveAlert = new MyAlertDialog(ImaginarySpaceActivity.this, "是否保存当前对话？", "确定", "取消") {
+                    saveAlert = new AdBannerDialog(ImaginarySpaceActivity.this, "是否保存当前对话？", "确定", "取消") {
                         @Override
                         public void buttonOne() {
                             systemParams.setInt("playerSaveCount", count);
