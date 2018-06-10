@@ -16,6 +16,9 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.InterstitialAd;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -46,12 +49,12 @@ public class ImaginarySpaceActivity extends BaseActivity implements View.OnClick
 
     ChatAdapter chatAdapter;
 
-    boolean  clue1 = false;
-    boolean  clue2 = false;
-    boolean  clue3 = false;
-    boolean  clue4 = false;
-    boolean  clue5 = false;
-    boolean  clue6 = false;
+    boolean clue1 = false;
+    boolean clue2 = false;
+    boolean clue3 = false;
+    boolean clue4 = false;
+    boolean clue5 = false;
+    boolean clue6 = false;
 
 
     Context context;
@@ -136,11 +139,42 @@ public class ImaginarySpaceActivity extends BaseActivity implements View.OnClick
     static Timer timer = new Timer();
     static TimerTask timerTask;
     SystemParams systemParams;
+    private InterstitialAd mInterstitialAd;
 
     @Override
     protected void initView() {
-        systemParams = SystemParams.getInstance();
+        mInterstitialAd = new InterstitialAd(this);
+        mInterstitialAd.setAdUnitId("ca-app-pub-4188622127448674/5607508576");
 
+        mInterstitialAd.setAdListener(new AdListener() {
+            @Override
+            public void onAdLoaded() {
+                Log.e("mInterstitialAd","onAdLoaded");
+            }
+
+            @Override
+            public void onAdFailedToLoad(int errorCode) {
+                Log.e("mInterstitialAd","onAdFailedToLoad -> "+errorCode);
+            }
+
+            @Override
+            public void onAdOpened() {
+                Log.e("mInterstitialAd","onAdOpened");
+            }
+
+            @Override
+            public void onAdLeftApplication() {
+                Log.e("mInterstitialAd","onAdLeftApplication");
+            }
+
+            @Override
+            public void onAdClosed() {
+                Log.e("mInterstitialAd","onAdClosed");
+            }
+        });
+        mInterstitialAd.loadAd(new AdRequest.Builder().build());
+
+        systemParams = SystemParams.getInstance();
         startDialog = new StartDialog(this);
         startDialog.show();
 
@@ -184,14 +218,14 @@ public class ImaginarySpaceActivity extends BaseActivity implements View.OnClick
 //                count = saveBranchCount;
 //                position = savePosition;
 //            } else {
-                mainList = gson.fromJson(charpter, new TypeToken<List<ChatBean>>() {
-                }.getType());
-                currentList = mainList;
-                mainTxtCount = saveMainCount;
-                count = saveMainCount;
-                position = savePosition;
-                saveBranchCount = 0;
-                branchTxtCount = 0;
+            mainList = gson.fromJson(charpter, new TypeToken<List<ChatBean>>() {
+            }.getType());
+            currentList = mainList;
+            mainTxtCount = saveMainCount;
+            count = saveMainCount;
+            position = savePosition;
+            saveBranchCount = 0;
+            branchTxtCount = 0;
 //            }
 
             selectOne.setVisibility(View.GONE);
@@ -248,7 +282,7 @@ public class ImaginarySpaceActivity extends BaseActivity implements View.OnClick
                                     saveBranchCount = branchTxtCount;
                                     currentBean.setContent(currentBean.getPlayer_text());
                                     //若刚刚读取过进度或是在结尾，则不保存
-                                    if (!lastContent.equals(currentBean.getPlayer_text())&&!saveDisabled&&!isBranch)
+                                    if (!lastContent.equals(currentBean.getPlayer_text()) && !saveDisabled && !isBranch)
                                         saveProgress();
 
                                     selectOne.setVisibility(View.GONE);
@@ -300,7 +334,7 @@ public class ImaginarySpaceActivity extends BaseActivity implements View.OnClick
                                     addItem();
                                     break;
                                 case ("left_answer"):
-                                    if(currentBean.getHero_answer1().startsWith("$ending")||currentBean.getHero_answer2().startsWith("$ending")||isBranch)
+                                    if (currentBean.getHero_answer1().startsWith("$ending") || currentBean.getHero_answer2().startsWith("$ending") || isBranch)
                                         saveDisabled = true;
                                     //内容中出现引用符号
                                     if (optionContent.startsWith("$") && optionContent.endsWith("$")) {
@@ -689,7 +723,7 @@ public class ImaginarySpaceActivity extends BaseActivity implements View.OnClick
                 configDialog.show();
                 break;
             case R.id.save_iv:
-                if ((!saveDisabled) && (isSelectMode)&&(!isBranch)) {
+                if ((!saveDisabled) && (isSelectMode) && (!isBranch)) {
 //                    Log.e(TAG, "onClick: "+saveDisabled+" "+isSelectMode+" "+ isBranch);
                     saveAlert = new AdBannerDialog(ImaginarySpaceActivity.this, "是否保存当前对话？", "确定", "取消") {
                         @Override
@@ -702,12 +736,12 @@ public class ImaginarySpaceActivity extends BaseActivity implements View.OnClick
                             systemParams.setDataList("playerSaveList", saveList);
                             systemParams.setString("playerSaveChapter", saveChapter);
 
-                            systemParams.setBoolean("playerSaveClue1", systemParams.getBoolean("clue1",false));
-                            systemParams.setBoolean("playerSaveClue2", systemParams.getBoolean("clue2",false));
-                            systemParams.setBoolean("playerSaveClue3", systemParams.getBoolean("clue3",false));
-                            systemParams.setBoolean("playerSaveClue4", systemParams.getBoolean("clue4",false));
-                            systemParams.setBoolean("playerSaveClue5", systemParams.getBoolean("clue5",false));
-                            systemParams.setBoolean("playerSaveClue6", systemParams.getBoolean("clue6",false));
+                            systemParams.setBoolean("playerSaveClue1", systemParams.getBoolean("clue1", false));
+                            systemParams.setBoolean("playerSaveClue2", systemParams.getBoolean("clue2", false));
+                            systemParams.setBoolean("playerSaveClue3", systemParams.getBoolean("clue3", false));
+                            systemParams.setBoolean("playerSaveClue4", systemParams.getBoolean("clue4", false));
+                            systemParams.setBoolean("playerSaveClue5", systemParams.getBoolean("clue5", false));
+                            systemParams.setBoolean("playerSaveClue6", systemParams.getBoolean("clue6", false));
                             showToast("存档成功！");
                         }
 
@@ -720,10 +754,13 @@ public class ImaginarySpaceActivity extends BaseActivity implements View.OnClick
                 }
                 break;
             case R.id.load_iv:
-                if ((!saveDisabled) && (isSelectMode)&&(!isBranch)) {
+                if ((!saveDisabled) && (isSelectMode) && (!isBranch)) {
                     loadAlert = new MyAlertDialog(ImaginarySpaceActivity.this, "是否读取上一次对话？", "确定", "取消") {
                         @Override
                         public void buttonOne() {
+                            if (mInterstitialAd.isLoaded()) {
+                                mInterstitialAd.show();
+                            }
                             if (timer != null)
                                 timer.cancel();
                             if (timerTask != null)
@@ -739,12 +776,12 @@ public class ImaginarySpaceActivity extends BaseActivity implements View.OnClick
                             int playerSaveMainCount = systemParams.getInt("playerSaveMainCount", 0);
                             int playerSaveBranchCount = systemParams.getInt("playerSaveBranchCount", 0);
 
-                            clue1= systemParams.getBoolean("playerSaveClue1",false);
-                            clue2= systemParams.getBoolean("playerSaveClue2",false);
-                            clue3= systemParams.getBoolean("playerSaveClue3",false);
-                            clue4= systemParams.getBoolean("playerSaveClue4",false);
-                            clue5= systemParams.getBoolean("playerSaveClue5",false);
-                            clue6= systemParams.getBoolean("playerSaveClue6",false);
+                            clue1 = systemParams.getBoolean("playerSaveClue1", false);
+                            clue2 = systemParams.getBoolean("playerSaveClue2", false);
+                            clue3 = systemParams.getBoolean("playerSaveClue3", false);
+                            clue4 = systemParams.getBoolean("playerSaveClue4", false);
+                            clue5 = systemParams.getBoolean("playerSaveClue5", false);
+                            clue6 = systemParams.getBoolean("playerSaveClue6", false);
 
                             if (playerSaveList == null || playerSaveChapter == null || playerSaveList.size() == 0 || playerSaveMainCount == -1 || playerSaveBranchCount == -1 || playerSaveCount == -1 || playerSavePosition == -1 || TextUtils.isEmpty(playerSaveChapter)) {
                                 showToast("没有读取到存档");
@@ -768,12 +805,12 @@ public class ImaginarySpaceActivity extends BaseActivity implements View.OnClick
 //                                    mainTxtCount = playerSaveMainCount + 2;
 //                                    position = playerSavePosition;
 //                                } else {
-                                    mainList = gson.fromJson(charpter, new TypeToken<List<ChatBean>>() {
-                                    }.getType());
-                                    currentList = new ArrayList<>();
-                                    currentList = mainList;
-                                    mainTxtCount = playerSaveMainCount;
-                                    position = playerSavePosition;
+                                mainList = gson.fromJson(charpter, new TypeToken<List<ChatBean>>() {
+                                }.getType());
+                                currentList = new ArrayList<>();
+                                currentList = mainList;
+                                mainTxtCount = playerSaveMainCount;
+                                position = playerSavePosition;
 //                                }
                                 recyclerview.scrollToPosition(position);
                                 timer = new Timer();
@@ -926,7 +963,7 @@ public class ImaginarySpaceActivity extends BaseActivity implements View.OnClick
         systemParams.setInt("count", 0);
         systemParams.setInt("position", 0);
         systemParams.setString("saveChapter", null);
-        systemParams.setString("saveBranchCount",null);
+        systemParams.setString("saveBranchCount", null);
         systemParams.setString("saveMainCount", null);
         systemParams.setString("saveCount", null);
         systemParams.setString("savePosition", null);
