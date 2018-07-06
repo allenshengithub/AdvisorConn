@@ -129,10 +129,14 @@ public class ImaginarySpaceActivity extends BaseActivity implements View.OnClick
     private int lastSave;
     boolean isLoad = false;
     boolean isLoading = false;
+    @BindView(R.id.save_iv)
+    ImageView saveIv;
+    @BindView(R.id.load_iv)
+    ImageView loadIv;
 
     String optionContent = "";
 
-    int delayTime = TEST_SPEED;
+    int delayTime = SLOW_SPEED;
     int position = 0;
     private final String TAG = this.getClass().toString();
 
@@ -189,7 +193,7 @@ public class ImaginarySpaceActivity extends BaseActivity implements View.OnClick
         intItemAnima();
 
         loadProgress();
-        saveDisabled = false;
+//        saveDisabled = false;
 
         if (saveList == null || saveChapter == null || saveList.size() == 0 || saveCount == 0 || saveMainCount == 0 || savePosition == 0 || TextUtils.isEmpty(saveChapter)) {
             chatAdapter = new ChatAdapter(this, currentList);
@@ -263,6 +267,10 @@ public class ImaginarySpaceActivity extends BaseActivity implements View.OnClick
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
+                        if(!saveDisabled){
+                            saveIv.setVisibility(View.VISIBLE);
+                            loadIv.setVisibility(View.VISIBLE);
+                        }
                         if (isBranch)
                             count = branchTxtCount;
                         else
@@ -300,6 +308,17 @@ public class ImaginarySpaceActivity extends BaseActivity implements View.OnClick
 
 //                                    if(currentBean.getHero_answer1().startsWith("$ending")||currentBean.getHero_answer2().startsWith("$ending")||isBranch)
 //                                        saveDisabled = true;
+
+
+                                    if(currentBean.getHero_answer1().startsWith("$ending")||currentBean.getHero_answer2().startsWith("$ending")||isBranch) {
+                                        saveDisabled = true;
+                                        saveIv.setVisibility(View.INVISIBLE);
+                                        loadIv.setVisibility(View.INVISIBLE);
+                                    } else{
+                                        saveDisabled = false;
+                                        saveIv.setVisibility(View.VISIBLE);
+                                        loadIv.setVisibility(View.VISIBLE);
+                                    }
 
                                     isSelectMode = true;
 //                                    saveProgress();
@@ -632,6 +651,9 @@ public class ImaginarySpaceActivity extends BaseActivity implements View.OnClick
                     currentBean.setContent(sendTv.getText().toString());
                     addItem();
                     sendTv.setVisibility(View.GONE);
+                    saveDisabled = true;
+                    saveIv.setVisibility(View.INVISIBLE);
+                    loadIv.setVisibility(View.INVISIBLE);
                 }
 //                timer = new Timer();
 //                generateTimer();
@@ -656,7 +678,9 @@ public class ImaginarySpaceActivity extends BaseActivity implements View.OnClick
                 addItem();
                 //设置选择的为1
                 optionContent = currentList.get(count + 1).getHero_answer1();
-
+                saveDisabled = true;
+                saveIv.setVisibility(View.INVISIBLE);
+                loadIv.setVisibility(View.INVISIBLE);
                 break;
             case R.id.select_two:
 
@@ -678,7 +702,9 @@ public class ImaginarySpaceActivity extends BaseActivity implements View.OnClick
                 addItem();
                 //设置选择的为2
                 optionContent = currentList.get(count + 1).getHero_answer2();
-
+                saveDisabled = true;
+                saveIv.setVisibility(View.INVISIBLE);
+                loadIv.setVisibility(View.INVISIBLE);
                 break;
             case R.id.config_iv:
                 isEnd = systemParams.getBoolean("isEnd");
@@ -880,8 +906,8 @@ public class ImaginarySpaceActivity extends BaseActivity implements View.OnClick
             public void buttonOne() {
 
                 startDialog.show();
-                deleteProgress();
-                saveDisabled = false;
+//                deleteProgress();
+//                saveDisabled = false;
 
                 branchList.clear();
                 mainList.clear();
@@ -894,6 +920,30 @@ public class ImaginarySpaceActivity extends BaseActivity implements View.OnClick
                 sendTv.setText("");
                 infoLl.setVisibility(View.INVISIBLE);
                 position = 0;
+
+                clue1 = false;
+                clue2 = false;
+                clue3 = false;
+                clue4 = false;
+                clue5 = false;
+                clue6 = false;
+
+                systemParams.setInt("count", 0);
+                systemParams.setInt("position", 0);
+                systemParams.setString("saveChapter", null);
+                systemParams.setString("saveBranchCount",null);
+                systemParams.setString("saveMainCount", null);
+                systemParams.setString("saveCount", null);
+                systemParams.setString("savePosition", null);
+                systemParams.setDataList("saveList", null);
+                systemParams.setBoolean("isBranch", false);
+
+                systemParams.setBoolean("clue1", false);
+                systemParams.setBoolean("clue2", false);
+                systemParams.setBoolean("clue3", false);
+                systemParams.setBoolean("clue4", false);
+                systemParams.setBoolean("clue5", false);
+                systemParams.setBoolean("clue6", false);
 
                 loadFirst();
                 updateTimer();
@@ -923,12 +973,13 @@ public class ImaginarySpaceActivity extends BaseActivity implements View.OnClick
             systemParams.setInt("savePosition", position);
             systemParams.setBoolean("isBranch", isBranch);
 
-            clue1 = false;
-            clue2 = false;
-            clue3 = false;
-            clue4 = false;
-            clue5 = false;
-            clue6 = false;
+//            clue1 = false;
+//            clue2 = false;
+//            clue3 = false;
+//            clue4 = false;
+//            clue5 = false;
+//            clue6 = false;
+
             systemParams.setBoolean("clue1", clue1);
             systemParams.setBoolean("clue2", clue2);
             systemParams.setBoolean("clue3", clue3);
@@ -955,28 +1006,35 @@ public class ImaginarySpaceActivity extends BaseActivity implements View.OnClick
         saveList = systemParams.getDataList("saveList");
         isBranch = systemParams.getBoolean("isBranch", isBranch);
 
+        clue1 = systemParams.getBoolean("clue1",false);
+        clue2 = systemParams.getBoolean("clue2",false);
+        clue3 = systemParams.getBoolean("clue3",false);
+        clue4 = systemParams.getBoolean("clue4",false);
+        clue5 = systemParams.getBoolean("clue5",false);
+        clue6 = systemParams.getBoolean("clue6",false);
+
         Log.e(TAG, " loadProgress----saveChapter: " + saveChapter + " ---saveCount: " + saveCount + " ---savePosition:" + savePosition + "---saveBranchCount" + branchTxtCount + "---saveMainCount" + mainTxtCount);
     }
 
     //删除当前进度
-    private void deleteProgress() {
-        systemParams.setInt("count", 0);
-        systemParams.setInt("position", 0);
-        systemParams.setString("saveChapter", null);
-        systemParams.setString("saveBranchCount", null);
-        systemParams.setString("saveMainCount", null);
-        systemParams.setString("saveCount", null);
-        systemParams.setString("savePosition", null);
-        systemParams.setDataList("saveList", null);
-        systemParams.setBoolean("isBranch", false);
-
-        systemParams.setBoolean("clue1", false);
-        systemParams.setBoolean("clue2", false);
-        systemParams.setBoolean("clue3", false);
-        systemParams.setBoolean("clue4", false);
-        systemParams.setBoolean("clue5", false);
-        systemParams.setBoolean("clue6", false);
-    }
+//    private void deleteProgress() {
+//        systemParams.setInt("count", 0);
+//        systemParams.setInt("position", 0);
+//        systemParams.setString("saveChapter", null);
+//        systemParams.setString("saveBranchCount", null);
+//        systemParams.setString("saveMainCount", null);
+//        systemParams.setString("saveCount", null);
+//        systemParams.setString("savePosition", null);
+//        systemParams.setDataList("saveList", null);
+//        systemParams.setBoolean("isBranch", false);
+//
+//        systemParams.setBoolean("clue1", false);
+//        systemParams.setBoolean("clue2", false);
+//        systemParams.setBoolean("clue3", false);
+//        systemParams.setBoolean("clue4", false);
+//        systemParams.setBoolean("clue5", false);
+//        systemParams.setBoolean("clue6", false);
+//    }
 
     //更新计时器
     private void updateTimer() {
