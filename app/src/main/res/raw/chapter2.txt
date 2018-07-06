@@ -1,4 +1,4 @@
-[
+﻿[
 {"type":"status","show_status":"对方快挂了"},
 {"type":"left_text","hero_text":"我靠"},
 {"type":"left_text","hero_text":"这感觉太糟糕了"},
@@ -79,7 +79,7 @@
 {"type":"status","show_status":"对方已离线"},
 {"type":"interval","interval_time":"10000，5000，1000"},
 {"type":"status","show_status":"对方已上线"},
-{"type":"left_text","hero_text":"你报告一下刚才发生的事"},
+{"type":"left_text","hero_text":"报告一下刚才发生的事"},
 {"type":"tips","show_tips":"注意钥匙的变化"},
 {"type":"left_text","hero_text":"进了门之后钥匙一直在震动"},
 {"type":"left_text","hero_text":"连门也跟着震动"},
