@@ -153,7 +153,7 @@ public class ImaginarySpaceActivity extends BaseActivity implements View.OnClick
         saveIv.setVisibility(View.INVISIBLE);
         loadIv.setVisibility(View.INVISIBLE);
         mInterstitialAd = new InterstitialAd(this);
-        mInterstitialAd.setAdUnitId("ca-app-pub-4188622127448674/5607508576");
+        mInterstitialAd.setAdUnitId("ca-app-pub-9885585575069784/8547832806");
 
         mInterstitialAd.setAdListener(new AdListener() {
             @Override
@@ -324,9 +324,9 @@ public class ImaginarySpaceActivity extends BaseActivity implements View.OnClick
                                         saveIv.setVisibility(View.INVISIBLE);
                                         loadIv.setVisibility(View.INVISIBLE);
                                     } else {
-//                                        saveDisabled = false;
-//                                        saveIv.setVisibility(View.VISIBLE);
-//                                        loadIv.setVisibility(View.VISIBLE);
+                                        saveDisabled = false;
+                                        saveIv.setVisibility(View.VISIBLE);
+                                        loadIv.setVisibility(View.VISIBLE);
                                     }
 
                                     isSelectMode = true;
@@ -445,10 +445,10 @@ public class ImaginarySpaceActivity extends BaseActivity implements View.OnClick
                                             else
                                                 inputStream = getResources().openRawResource(R.raw.ending_infinity);
                                         } else {
-                                            boolean ending_wakeup = systemParams.getBoolean("ending_wakeup", false);
-                                            boolean ending_chaos = systemParams.getBoolean("ending_chaos", false);
-                                            boolean ending_infinity = systemParams.getBoolean("ending_infinity", false);
-                                            if (clueCount == 3 && ending_wakeup == true && ending_chaos == true && ending_infinity == true)
+//                                            boolean ending_wakeup = systemParams.getBoolean("ending_wakeup", false);
+//                                            boolean ending_chaos = systemParams.getBoolean("ending_chaos", false);
+//                                            boolean ending_infinity = systemParams.getBoolean("ending_infinity", false);
+                                            if (clueCount == 3)
                                                 inputStream = getResources().openRawResource(R.raw.ending_rebirth);
                                             else
                                                 inputStream = getResources().openRawResource(R.raw.ending_chaos);

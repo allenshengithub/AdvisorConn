@@ -1,6 +1,7 @@
 package alphabet.adviserconn.config;
 
 import android.app.Application;
+import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Matrix;
@@ -8,6 +9,9 @@ import android.media.ExifInterface;
 import android.net.Uri;
 import android.util.Log;
 
+import com.google.android.gms.ads.MobileAds;
+
+import alphabet.adviserconn.MyApp;
 import alphabet.adviserconn.utils.UnCeHandler;
 
 /**
@@ -25,6 +29,7 @@ public class AdvisorConnApp extends Application {
         return instance;
     }
 
+    public static Context context;
 
     @Override
     public void onCreate() {
@@ -33,6 +38,9 @@ public class AdvisorConnApp extends Application {
         SystemParams.init(this);
         UnCeHandler catchExcep = new UnCeHandler(this);
         Thread.setDefaultUncaughtExceptionHandler(catchExcep);
+        context = this.getApplicationContext();
+        MobileAds.initialize(this, "ca-app-pub-9885585575069784~3957016956");
+
     }
 
 }

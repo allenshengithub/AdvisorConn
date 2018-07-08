@@ -22,7 +22,7 @@ public class MyApp extends Application {
         context = this.getApplicationContext();
         app = this;
         super.onCreate();
-        MobileAds.initialize(this, "ca-app-pub-4188622127448674~2567090880");
+        MobileAds.initialize(this, "ca-app-pub-9885585575069784~3957016956");
     }
 
     public void init(){
